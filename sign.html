@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seethawaka Botanical Garden</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="sign.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="logo">Seethawaka<br><span>Botanical Garden</span></a>
+		<ul class="nav-link">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="attractions.html">Attractions</a></li>
+			<li><a href="activities.html">Activities</a></li>
+			<li><a href="informations.html">Informations</a></li>
+			<li><a href="sign.html">Sign In</a></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h5 class="copyrightText">Copyright ©2025, <br>Created by <a href="https://www.linkedin.com/in/e-a-d-d-lakmali-07156334a/">E.A.D.D.Lakmali</a>. <br> All rights reserved.</h5>
+	</nav>
+	<div class="navbar">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+	</div>
+	<script src="main.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header=document.querySelector("nav");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+	</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+		$(document).on('click','.nav-link li',function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+	<div class="main">
+		<section>
+			<div class="containerBx">
+				<div class="user signinBx">
+					<div class="imgBx">
+						<img src="img/41.jpg">
+					</div>
+					<div class="formBx">
+						<form>
+							<h2>Sign In</h2>
+							<input type="text" name="" placeholder="Username">
+							<input type="password" name="" placeholder="Password">
+							<input type="submit" name="" value="Login">
+							<p class="signup">Don't have an account? <a href="#" onClick="toggleForm();">Sign Up</a></p>
+						</form>
+					</div>
+				</div>
+				<div class="user signupBx">
+					<div class="formBx">
+						<form>
+							<h2>Create an account</h2>
+							<input type="text" name="" placeholder="Username">
+							<input type="email" name="" placeholder="Email Address">
+							<input type="password" name="" placeholder="Create Password">
+							<input type="password" name="" placeholder="Confirm Password">
+							<input type="submit" name="" value="Sign Up">
+							<p class="signup">Already have an account? <a href="#" onClick="toggleForm();">Sign In</a></p>
+						</form>
+					</div>
+					<div class="imgBx">
+						<img src="img/42.jpg">
+					</div>
+				</div>
+				<script>
+					function toggleForm(){
+						var container = document.querySelector('.containerBx');
+						container.classList.toggle('active')
+					}
+				</script>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
+

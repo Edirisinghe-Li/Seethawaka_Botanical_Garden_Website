@@ -1,0 +1,743 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: #fff;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+}
+h1
+{
+	font-family: 'Playfair Display', serif;
+}
+p
+{
+	font-family: 'Poppins', sans-serif;
+}
+h4
+{
+	font-family: 'Poppins', sans-serif;
+}
+h5
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+nav
+{
+	position: fixed;
+	float: left;
+	width: 20%;
+	height: 100vh;
+	background:#1A2421;
+	background-size: cover;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5% 5%;
+	z-index: 100000;
+	font-family: 'Playfair Display', serif;
+}
+nav .logo
+{
+	position: relative;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+	visibility: visible;
+	opacity: 1;
+}
+nav .logo span
+{
+	font-size: 2em;
+	font-weight: 700;
+}
+nav .nav-link
+{
+	position: relative;
+	color: #fff;
+	margin-top: 25px;
+	list-style: none;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+nav .nav-link li
+{
+	position: relative;
+	padding: 5px 0;
+}
+nav .nav-link li a
+{
+	color: #0B6623;
+	font-size: 1em;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+nav .nav-link li a:hover
+{
+	color: #fff;
+}
+nav .nav-link li.active a
+{
+	color: #fff;
+}
+nav .sci
+{
+	position: relative;
+	display: flex;
+	margin-top: 25px;
+	list-style: none;
+}
+nav .sci li
+{
+	position: relative;
+	padding: 15px;
+}
+nav .sci li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+nav .sci li a i
+{
+	font-size: 20px;
+}
+nav h5
+{
+	color: #fff;
+	font-display: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+nav h5 a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.main
+{
+	position: relative;
+	width: 80%;
+	float: right;
+	left: 20%;
+	background: #A8E4A0;
+}
+.main .banner
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: url(img/1.jpg);
+	background-size: cover;
+}
+
+.main .banner .top
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 65%;
+	top: 0;
+	background: rgba(186,56,102,0.3);
+}
+.main .banner .top .left
+{
+	position: relative;
+	width: 70%;
+	height: 100%;
+	background: #1A2421;
+	padding: 8%;
+}
+.main .banner .top .left h1
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 3em;
+	font-weight: 500;
+	color: #fff;
+}
+.main .banner .top .left p
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5em;
+	color: #0B6623;
+	margin-top: 50px;
+}
+.main .banner .top .left p span
+{
+	color: #fff;
+}
+.main .banner .top .left a
+{
+	position: relative;
+	width: 100px;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 10px;
+	background: #0B6623;
+	display: none;
+	margin-top: 25px;
+}
+.main .banner .top .right
+{
+	position: relative;
+	width: 30%;
+	height: 100%;
+	padding:2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main .banner .top .right a
+{
+	position: relative;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 10px;
+	border: 3px solid #fff;
+}
+.main .banner .bottom
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 35%;
+	background: rgba(186,56,102,0.3);
+}
+.main .banner .bottom .left
+{
+	position: relative;
+	width: 70%;
+	height: 100%;
+}
+.main .banner .bottom .right
+{
+	position: relative;
+	width: 30%;
+	height: 100%;
+}
+.main .banner .bottom .right img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.main .banner .circle-text
+{
+	position: absolute;
+	display: flex;
+	top: 63%;
+	left: 70%;
+	min-height: 100vh;
+}
+.main .banner .circle-text .text
+{
+	position: absolute;
+	color: #fff;
+	font-size: 1em;
+	user-select:none;
+	pointer-events: none;
+	animation: animate 60s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: rotate(360deg);
+	}
+	100%
+	{
+		transform: rotate(0deg);
+	}
+}
+.main .banner .circle-text .text span
+{
+	position: absolute;
+	top: -100px;
+	text-transform: uppercase;
+	display: inline-block;
+	transform-origin: 0 100px;
+}
+.main .container
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 50px 20px;
+}
+.main .container .detail
+{
+	position: relative;
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	padding: 5%;
+}
+.main .container .detail h2
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	text-align: center;
+	color: #0B6623;
+}
+.main .container .detail p
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 50px;
+	color: #000;
+	text-align: center;
+}
+.main .container .detail a
+{
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	background: #0B6623;
+	margin-top: 40px;
+}
+.main .container .imgBox
+{
+	position: relative;
+	width: 50%;
+	height: 100vh;
+	margin-top: 75px;
+}
+.main .container .imgBox img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.main .container02
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color:#F0FFF0;
+	margin: 0;
+	padding: 50px 20px;
+	justify-content: center;
+	align-items: center;
+}
+.main .container02 .info
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #F0FFF0;
+	padding-top: 100px;
+}
+.main .container02 .info h2
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	text-align: center;
+	color: #0B6623;
+}
+.main .container02 .info p
+{
+	width: 70%;
+	margin-top: 50px;
+	font-size: 16px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.main .container02 .card-container
+{
+	position:relative;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+	width:100%;
+	background-color:#F0FFF0;
+	padding:10px;
+	padding-top:50px;
+}
+.main .container02 .card-container .serviceBox
+{
+	width:300px;
+	height:200px;
+	margin:10px;
+	padding:10px 10px;
+	margin-bottom:60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main .container02 .card-container .serviceBox .serviceImgbx
+{
+	position:relative;
+	text-align:center;
+	width:70px;
+	height:70px;
+}
+.main .container02 .card-container .serviceBox .serviceImgbx a
+{
+	background: none;
+}
+.main .container02 .card-container .serviceBox .serviceImgbx a img
+{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+}
+.main .container02 .card-container .serviceBox .seviceDetail
+{
+	margin-top:25px;
+	position:relative;
+	text-align:center;
+}
+.main .container02 .card-container .serviceBox .seviceDetail h3
+{
+	color:#000;
+	font-family:'Poppins', sans-serif;
+	font-size:18px;
+	font-weight:400;
+	margin-bottom:10px;
+}
+.main .container02 .card-container .serviceBox .seviceDetail h2
+{
+	color:#1A2421;
+	font-family:'Poppins', sans-serif;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:24px;
+	font-weight:600;
+}
+.main .container02 a
+{
+	position: relative;
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	background: #0B6623;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+.main .gallary
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main .gallary .img-container
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+.main .gallary .img-container .imgBx
+{
+	width: 33.33%;
+	height: 300px;
+	overflow: hidden;
+}
+.main .gallary .img-container .imgBx img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.main .gallary .detailBx
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.main .container02 .card-container .card
+{
+	position:relative;
+	width:300px;
+	height:500px;
+	margin:30px;
+	overflow:hidden;
+	box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+	border-radius:18px;
+	justify-content:center;
+	align-items:center;
+	background: #000;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+}
+.main .container02 .card-container .card .card-image
+{
+	position: relative;
+	width: 100%;
+	height: 210px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.main .container02 .card-container .card .card-image img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.main .container02 .card-container .card .card-text
+{
+	position: relative;
+	margin: 25px;
+	text-align: center;
+	transform: translateZ(30px);
+}
+.main .container02 .card-container .card .card-text .date
+{
+	color: #770103;
+	margin-top: 45px;
+}
+.main .container02 .card-container .card .card-text h2
+{
+	color: #fff;
+}
+.main .container02 .card-container .card .card-text p
+{
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	margin-top: 15px;
+}
+@media screen and (max-width:991px)
+{
+	.navbar
+	{
+		position:fixed;
+		cursor:pointer;
+		right:5%;
+		top:5%;
+		transform:translate(-5%, -50%);
+		z-index:100000;
+	}
+	.navbar .line
+	{
+		width:32px;
+		height:4px;
+		background:#fff;
+		margin:5px;
+		display: block;
+		transition: 0.5s;
+	}
+	.navbar.active .line:nth-child(2)
+	{
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	.navbar.active .line:nth-child(1)
+	{
+		transform: rotateY(180deg) rotateZ(45deg) translate(5.5px,7px);
+	}
+	.navbar.active .line:nth-child(3)
+	{
+		transform: rotateY(180deg) rotateZ(-45deg) translate(5.5px,-7px);
+	}
+	nav
+	{
+		position: fixed;
+		float: left;
+		width: 100%;
+		height: 100vh;
+		background:#1A2421;
+		background-size: cover;
+		left: -100%;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2.5% 5%;
+		z-index: 100000;
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.2s;
+	}
+	nav.open
+	{
+		left: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+	.main
+	{
+		width: 100%;
+		left: 0;
+	}
+}
+@media screen and (max-width:768px)
+{
+	.navbar .line
+	{
+		width:25px;
+		height:2.5px;
+		
+	}
+	.navbar.active .line:nth-child(2)
+	{
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	.navbar.active .line:nth-child(1)
+	{
+		transform: rotateY(180deg) rotateZ(45deg) translate(3.5px,7px);
+	}
+	.navbar.active .line:nth-child(3)
+	{
+		transform: rotateY(180deg) rotateZ(-45deg) translate(3.5px,-7px);
+	}
+	nav .logo
+	{
+		font-size: 1em;
+	}
+	nav .logo span
+	{
+		font-size: 1.5em;
+	}
+	.main .banner .top .left
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.main .banner .top .left a
+	{
+		display: block;
+	}
+	.main .banner .top .right
+	{
+		display: none;
+	}
+	.main .banner .bottom .left
+	{
+		width: 50%;
+	}
+	.main .banner .bottom .right
+	{
+		width: 50%;
+	}
+	.main .banner .top .left h1
+	{
+		font-size: 2em;
+		margin-top: 100px;
+		text-align: center;
+	}
+	.main .banner .top .left p
+	{
+		font-size: 1.25em;
+	}
+	.main .banner .circle-text
+	{
+		display: none;
+	}
+	.main .container
+	{
+	flex-direction: column;
+	}
+	.main .container .detail
+	{
+		width: 100%;
+	}
+	.main .container .imgBox
+	{
+		width: 100%;
+		margin-top: 0;
+	}
+	.main .container .detail h2
+	{
+		font-size: 2em;
+	}
+	.main .container .detail p
+	{
+		font-family: 16px;
+	}
+	.main .container02 .info h2
+	{
+		font-size: 2em;
+	}
+	.main .container02 .info p
+	{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width:440px)
+{
+	nav .logo
+	{
+		font-size: 16px;
+	}
+	nav .logo span
+	{
+		font-size: 24px;
+	}
+	.main .banner .top .left h1
+	{
+		font-size: 1.5em;
+	}
+	.main .banner .top .left p
+	{
+		font-size: 16px;
+	}
+	.main .container .detail h2
+	{
+		font-size: 1.5em;
+	}
+	.main .container .detail p
+	{
+		font-size: 12px;
+	}
+	.main .container02 .info h2
+	{
+		font-size: 1.5em;
+	}
+	.main .container02 .info p
+	{
+		font-size: 12px;
+	}
+}
+
+

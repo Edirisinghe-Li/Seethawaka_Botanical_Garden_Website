@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seethawaka Botanical Garden</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="logo">Seethawaka<br><span>Botanical Garden</span></a>
+		<ul class="nav-link">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="attractions.html">Attractions</a></li>
+			<li><a href="activities.html">Activities</a></li>
+			<li><a href="informations.html">Informations</a></li>
+			<li><a href="sign.html">Sign In</a></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h5 class="copyrightText">Copyright ©2025, <br>Created by <a href="https://www.linkedin.com/in/e-a-d-d-lakmali-07156334a/">E.A.D.D.Lakmali</a>. <br> All rights reserved.</h5>
+	</nav>
+	<div class="navbar">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+	</div>
+	<script src="main.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header=document.querySelector("nav");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+	</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+		$(document).on('click','.nav-link li',function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+	<div class="main">
+		<div class="banner">
+				<div class="top">
+					<div class="left">
+						<h1>Plan Your Visit to Seethawaka.
+						</h1>
+						<p>Book your visit <span>+12 (0) 123 456 789</span></p>
+						<a href="#">Book Now</a>
+					</div>
+					<div class="right">
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="left">
+					</div>
+					<div class="right">
+						<img src="img/16.jpg">
+					</div>
+				</div>
+			<div class="circle-text">
+				<h2 class="text">Seethawaka-Botanical-Garden-2014-</h2>
+			</div>
+			<script>
+				const text = document.querySelector('.text');
+				text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+				const element = document.querySelectorAll('span');
+				for(let i=0; i<element.length; i++){
+					element[i].style.transform = "rotate("+i*11+"deg)"
+				}
+			</script>
+		</div>
+		<div class="container02">
+			<div class="info">
+				<h2>Visitor Essentials: What You Need to Know</h2>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+			</div>
+			<div class="card-container">
+				<div class="serviceBox">
+					<div class="serviceImgbx">
+						<a href="#"><img src="img/5.png"></a>
+					</div>
+					<div class="seviceDetail">
+						<h3>Opening Hours.</h3>
+						<h4>Open daily from 7:30 AM to 6:00 PM</h4>
+					</div>
+				</div>
+				<div class="serviceBox">
+					<div class="serviceImgbx">
+						<a href="#"><img src="img/6.png"></a>
+					</div>
+					<div class="seviceDetail">
+						<h3>Ticketing Hours</h3>
+						<h4>Tickets are available from 7:30 AM to 5:00 PM.</h4>
+					</div>
+				</div>
+				<div class="serviceBox">
+					<div class="serviceImgbx">
+						<a href="#"><img src="img/7.png"></a>
+					</div>
+					<div class="seviceDetail">
+						<h3>Ticket Prices</h3>
+						<h4>Local Visitors:LKR 200</h4>
+						<h4>Foreign Visitors: LKR 3,540</h4>
+					</div>
+				</div>
+				<div class="serviceBox">
+					<div class="serviceImgbx">
+						<a href="#"><img src="img/8.png"></a>
+					</div>
+					<div class="seviceDetail">
+						<h3>Guided Tours</h3>
+						<h4>Available upon request at the ticket counter.</h4>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="gallary">
+			<div class="img-container">
+				<div class="imgBx"><img src="img/133.jpg"></div>
+				<div class="imgBx"><img src="img/144.jpg"></div>
+				<div class="imgBx"><img src="img/155.jpg"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

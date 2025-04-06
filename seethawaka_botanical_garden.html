@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seethawaka Botanical Garden</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="logo">Seethawaka<br><span>Botanical Garden</span></a>
+		<ul class="nav-link">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="attractions.html">Attractions</a></li>
+			<li><a href="activities.html">Activities</a></li>
+			<li><a href="informations.html">Informations</a></li>
+			<li><a href="sign.html">Sign In</a></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h5 class="copyrightText">Copyright ©2025, <br>Created by <a href="https://www.linkedin.com/in/e-a-d-d-lakmali-07156334a/">E.A.D.D.Lakmali</a>. <br> All rights reserved.</h5>
+	</nav>
+	<div class="navbar">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+	</div>
+	<script src="main.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header=document.querySelector("nav");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+	</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+		$(document).on('click','.nav-link li',function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
+	<div class="main">
+		<div class="banner">
+				<div class="top">
+					<div class="left">
+						<h1>A Healing Journey Through <br>Seethawaka Botanical Garden
+						</h1>
+						<p>Book your visit <span>+12 (0) 123 456 789</span></p>
+						<a href="#">Book Now</a>
+					</div>
+					<div class="right">
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="left">
+					</div>
+					<div class="right">
+						<img src="img/16.jpg">
+					</div>
+				</div>
+			<div class="circle-text">
+				<h2 class="text">Seethawaka-Botanical-Garden-2014-</h2>
+			</div>
+			<script>
+				const text = document.querySelector('.text');
+				text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+
+				const element = document.querySelectorAll('span');
+				for(let i=0; i<element.length; i++){
+					element[i].style.transform = "rotate("+i*11+"deg)"
+				}
+			</script>
+		</div>
+		<div class="container">
+			<div class="detail">
+				<p>Nestled in the tranquil village of Ilukovita near Avissawella, Seethawaka Botanical Garden was established in 2014 as a sanctuary for Sri Lanka's rich wet zone biodiversity. This land, once part of the historic Seethawaka Kingdom, has been thoughtfully transformed by the Department of National Botanic Gardens into a peaceful escape that blends natural beauty with cultural heritage. Spanning over 79 acres, the garden is designed primarily for the conservation of endangered plant species, particularly those native to the Sinharaja rainforest, making it a vital space for ecological preservation and research.
+					<br><br>
+
+				Beyond its scientific significance, the garden offers a serene retreat for the soul. Calm lakes, whispering bamboo groves, vibrant orchids, and gently winding paths create a calming atmosphere perfect for slow walks and quiet reflection. Attractions such as the butterfly garden and fern-covered trails provide moments of wonder and peace, while shaded rest points invite visitors to pause and breathe deeply. Whether you're seeking relaxation, inspiration, or simply a break from the noise of everyday life, Seethawaka Botanical Garden offers a unique opportunity to heal both body and mind—one peaceful step at a time.
+</p>
+			</div>
+			<div class="imgBox">
+				<img src="img/17.jpg">
+			</div>
+		</div>
+		<div class="gallary">
+			<div class="img-container">
+				<div class="imgBx"><img src="img/133.jpg"></div>
+				<div class="imgBx"><img src="img/144.jpg"></div>
+				<div class="imgBx"><img src="img/155.jpg"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
